@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>interactive-card-details-form-main</title>
+    </head>
+
+    <body>
+        <div class="sideone">
+            <img src="images/bg-main-desktop.png" alt="background" class="background">
+        </div>
+        <div class="card-front-container">
+            <img src="images/bg-card-front.png" alt="card-front" class=" card-front">
+            <img src="images/card-logo.svg" alt="card-logo" class="card-logo">
+
+            <span class="result-number">0000 0000 0000 0000</span>
+            <span class="result-name">jane appleseed</span>
+            <div class="result-date">
+                <span class="result-month">00</span>/<span class="result-year">00</span>
+            </div>
+        </div>
+        <div class="card-back-container">
+            <img src="images/bg-card-back.png" alt="card-back" class=" card-back">
+
+            <span class="result-cvc">000</span>
+
+        </div>
+        <div class="main">
+            <form class="form">
+                <label for="name" class="label-name">cardholder name</label>
+                <input type="text" class="name" placeholder="e.g. Jane Appleseed">
+                <span class="span-name"></span>
+
+                <label for="name" class="label-number">card number</label>
+                <input type="number" class="number" placeholder="e.g. 1234 5678 9123 0000">
+
+                <span class="span-number"></span>
+
+                <label for="name" class="label-exp">exp. date(mm/yy)</label>
+
+                <div class="group">
+                    <div class="small">
+                        <input type="datetime" class="date-month" placeholder="MM">
+                        <input type="datetime" class="date-year" placeholder="YY">
+                        <span class="span-date"></span>
+                    </div>
+
+                    <label for="cvc" class="label-cvc">cvc</label>
+
+                    <input type="number" name="cvc" placeholder="e.g. 123" class="cvc">
+                    <span class="span-cvc"></span>
+
+                </div>
+                <button class="button">confirm</button>
+        </div>
+
+        </form>
+        </div>
+
+
+        <div class="success">
+            <img src="images/icon-complete.svg" alt="icon-complete" class="success__img">
+            <h1 class="success__heading">
+                thank you!
+            </h1>
+            <p class="success__paragraph">
+                We've added your card details
+            </p>
+
+            <button class="success__btn">Continue</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
